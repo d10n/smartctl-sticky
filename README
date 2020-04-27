@@ -1,0 +1,5 @@
+# smartctl-sticky
+
+Telegraf was spamming up Linux audit logs in the systemd journal and dmesg due to its usage of sudo.
+
+This tool safely wraps smartctl, letting users in the smartctl group run smartctl as root with whitelisted command-line arguments, without spamming the audit log and without the need for sudo.
